@@ -118,6 +118,15 @@
 
   .pull{margin:38px 0 8px;padding-left:22px;border-left:3px solid var(--acc);font-family:var(--serif);font-style:italic;font-weight:420;font-size:1.35rem;line-height:1.45;max-width:560px;color:var(--ink)}
 
+  /* ---------- FIGURES ---------- */
+  .fig{margin:6px 0 34px;max-width:760px}
+  .fig .frame{border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--bg-soft)}
+  .fig img{width:100%;aspect-ratio:16/9;object-fit:cover;filter:saturate(.88) contrast(1.04);transition:transform .6s ease}
+  .fig:hover img{transform:scale(1.02)}
+  .fig figcaption{display:flex;justify-content:space-between;gap:16px;margin-top:10px;font-family:var(--mono);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-dim)}
+  .fig figcaption b{color:var(--acc);font-weight:500}
+  @media (prefers-reduced-motion:reduce){.fig img{transition:none}.fig:hover img{transform:none}}
+
   /* ---------- GAMEDAY FEATURE ---------- */
   .gameday{background:
     radial-gradient(ellipse 80% 60% at 50% 110%, rgba(191,87,0,.35), transparent 70%),var(--bg-soft)}
@@ -259,6 +268,7 @@
     </div>
     <div class="ch-body rv">
       <h2>Ankommen, wo <em>niemand schläft</em></h2>
+      <figure class="fig"><div class="frame"><img src="img/01-vegas-strip.jpg" alt="Der Las Vegas Strip bei Nacht" loading="lazy"></div><figcaption><span><b>Kap. I</b> — Der Strip bei Nacht</span><span>Las Vegas, NV</span></figcaption></figure>
       <p>Drei Nächte im <strong>Palazzo</strong> — Suiten statt Zimmer, mitten auf dem Strip. Der erste Abend gehört dem Staunen: die Fountains of Bellagio, die Kanäle des Venetian, das Leuchten, das man aus dem All sieht. Am zweiten Tag Pool-Vormittag (die Wüste liefert 40 Grad frei Haus), abends geht's nach Downtown: <strong>Fremont Street</strong>, das alte Vegas, wo die Neonröhren noch echt sind.</p>
       <p>Und dann der erste Ausbruch: Früh am Morgen raus ins <strong>Valley of Fire</strong> — Felsen, die aussehen, als würden sie brennen, nur eine Stunde von der Stadt. Auf dem Rückweg der <strong>Hoover Dam</strong>, Amerikas Beton gewordener Größenwahn von 1935. Abends zurück, geduscht, Dinner, Show.</p>
       <div class="cards">
@@ -279,6 +289,7 @@
     </div>
     <div class="ch-body rv">
       <h2>Staub, Steaks &amp; <em>Samstagabend-Rodeo</em></h2>
+      <figure class="fig"><div class="frame"><img src="img/02-rodeo.jpg" alt="Bull Riding beim Rodeo unter Flutlicht" loading="lazy"></div><figcaption><span><b>Kap. II</b> — Acht Sekunden unter Flutlicht</span><span>Hill Country, TX</span></figcaption></figure>
       <p>Freitagabend landen wir in <strong>Austin</strong>, Absacker auf der Rainey Street — umgebaute Bungalows, in denen jetzt Bars wohnen. Samstag übernimmt der Mietwagen: raus ins Hill Country nach <strong>Fredericksburg</strong>, gegründet 1846 von deutschen Siedlern. Biergärten an der Main Street, Weingüter, und Ortsschilder, die aussehen wie aus der Pfalz — nur mit Kakteen.</p>
       <p>Abends dann das erste große Highlight: die <strong>Tejas Rodeo Company</strong> in Bulverde. Kein Touristenprogramm, sondern das, was die Locals hier samstags machen. Gates ab 17 Uhr, um 19:30 fliegt der erste Bulle. Bull Riding, Barrel Racing, Team Roping — und danach Live-Country und Two-Step unterm Sternenhimmel bis Mitternacht. BBQ und kaltes Bier inklusive.</p>
       <p class="pull">»Bring your boots.« — Mehr Dresscode gibt es nicht.</p>
@@ -299,6 +310,7 @@
     </div>
     <div class="ch-body rv">
       <h2>Geschichte am Fluss, <em>Nächte in der Brauerei</em></h2>
+      <figure class="fig"><div class="frame"><img src="img/03-riverwalk.jpg" alt="Der San Antonio River Walk am Abend" loading="lazy"></div><figcaption><span><b>Kap. III</b> — Eine Etage unter der Stadt</span><span>San Antonio, TX</span></figcaption></figure>
       <p>Sonntagmorgen stehen wir vor dem <strong>Alamo</strong> — der Ort, an dem 1836 der texanische Gründungsmythos geschrieben wurde. Danach schlendern wir den <strong>River Walk</strong> entlang, eine Etage unter der Stadt, vorbei an Zypressen und Uferrestaurants.</p>
       <p>Geschlafen wird im <strong>Hotel Emma</strong>: eine Brauerei von 1894, verwandelt in eines der schönsten Hotels Amerikas. Der Pearl District drumherum liefert das Abendprogramm gleich mit — Restaurants, Bars, texanische Lässigkeit.</p>
       <div class="cards">
@@ -318,6 +330,7 @@
     </div>
     <div class="ch-body rv">
       <h2>»Houston, <em>wir haben gebucht.«</em></h2>
+      <figure class="fig"><div class="frame"><img src="img/04-saturn-v.jpg" alt="Die Saturn-V-Rakete im Space Center Houston" loading="lazy"></div><figcaption><span><b>Kap. IV</b> — 111 Meter Mondrakete</span><span>Space Center Houston, TX</span></figcaption></figure>
       <p>Drei Nächte im <strong>Hotel ZaZa</strong>, mitten im Museum District am Hermann Park. Der Dienstag gehört komplett dem <strong>Space Center Houston</strong>: eine echte Saturn V in voller Länge (111 Meter Rakete, liegend), das Space Shuttle huckepack auf einer 747, Mondgestein zum Anfassen — und per Tram geht's aufs NASA-Gelände zum historischen <strong>Mission Control</strong>, dem Raum, aus dem die Mondlandung geflogen wurde.</p>
       <p>Mittwoch bleibt Houston: Museum District mit dem Naturkundemuseum und dem Museum of Fine Arts, alles fußläufig vom Hotel. Abends Steaks — wir sind schließlich in Texas.</p>
       <div class="cards">
@@ -338,6 +351,7 @@
     </div>
     <div class="ch-body rv">
       <h2>Rauchzeichen aus <em>Lockhart</em></h2>
+      <figure class="fig"><div class="frame"><img src="img/05-brisket.jpg" alt="Texas Brisket auf Butcher Paper" loading="lazy"></div><figcaption><span><b>Kap. V</b> — 14 Stunden im Smoker</span><span>Lockhart, TX</span></figcaption></figure>
       <p>Auf dem Rückweg nach Austin liegt <strong>Lockhart</strong> — per Gesetzesbeschluss die offizielle <strong>»Barbecue Capital of Texas«</strong>. Hier wird seit Generationen über Post-Oak-Holz geräuchert: Brisket, das nach 14 Stunden im Smoker auf der Gabel zerfällt, Jalapeño-Cheese-Sausage, Ribs. Wir essen bei <strong>Black's</strong>, familiengeführt seit 1932, von Butcher Paper, mit den Händen. Besteck ist optional, Servietten sind es nicht.</p>
       <p class="pull">Regel Nr. 1 im texanischen BBQ: Wenn die Soße nötig ist, war das Fleisch nicht gut genug. Bei Black's braucht ihr keine.</p>
     </div>
@@ -353,6 +367,7 @@
     </div>
     <div class="ch-body rv">
       <h2>Hundert­tausend Stimmen, <em>ein Kickoff</em></h2>
+      <figure class="fig"><div class="frame"><img src="img/06-stadium.jpg" alt="College-Football-Stadion voller Fans" loading="lazy"></div><figcaption><span><b>Kap. VI</b> — Game Day in Burnt Orange</span><span>Austin, TX</span></figcaption></figure>
       <div class="scoreline">
         <div class="team">Texas Longhorns<small>#Hook 'em · SEC</small></div>
         <div class="vs">vs.</div>
@@ -378,6 +393,7 @@
     </div>
     <div class="ch-body rv">
       <h2>Auf Glas über dem <em>Grand Canyon</em></h2>
+      <figure class="fig"><div class="frame"><img src="img/07-grand-canyon.jpg" alt="Blick über den Grand Canyon West Rim" loading="lazy"></div><figcaption><span><b>Kap. VII</b> — 1.200 Meter Tiefblick</span><span>Grand Canyon West, AZ</span></figcaption></figure>
       <p>Am Labor Day fliegen wir zurück nach Vegas, zurück ins <strong>Palazzo</strong> — diesmal als alte Bekannte. Und dann das große Finale: der <strong>Grand Canyon West Rim</strong>, gut zwei Stunden Fahrt. Am <strong>Skywalk</strong> laufen wir auf einem gläsernen Hufeisen hinaus über den Abgrund — rund 1.200 Meter freier Blick nach unten zum Colorado River. Dazu Eagle Point und Guano Point, betrieben vom Volk der Hualapai, auf deren Land der West Rim liegt.</p>
       <p>Der letzte volle Tag gehört Vegas: Pool, vielleicht eine Show, ein Finale-Dinner mit Blick auf den Strip. Donnerstag hebt die Maschine Richtung Frankfurt ab — mit vollen Speicherkarten und der Gewissheit, dass wir davon noch Jahre erzählen.</p>
       <div class="cards">
@@ -517,6 +533,12 @@
     var t=new Date('2026-08-25T00:00:00');
     var d=Math.max(0,Math.ceil((t-Date.now())/86400000));
     el.textContent=d;
+  })();
+  // Fehlende Bilder: Rahmen sauber ausblenden statt Broken-Image-Icon
+  (function(){
+    document.querySelectorAll('.fig img').forEach(function(img){
+      img.addEventListener('error',function(){var f=img.closest('.fig');if(f)f.style.display='none';});
+    });
   })();
   // Scroll-Reveals
   (function(){
